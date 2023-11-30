@@ -1,10 +1,21 @@
-"use client"
 import React from "react"
 import { Product } from "@/app/lib/definitions"
 import ProductCard from "../ProductCard/ProductCard"
+import { fetchFilteredProducts } from "@/app/lib/data";
 
+export default async function ProductsTemplate ({ query, currentPage }: { query: string; currentPage: number; }) {
 
-const ProductsTemplate = ({ products }: { products: Product[] }) => {
+    const products = await fetchFilteredProducts(query, currentPage);
+
+    if (products.length === 0 && query) {
+        return (
+            <div>
+                <div className="grid grid-cols-12 gap-6">
+                    <h1>No products found</h1>
+                </div>
+            </div>
+        )
+    }
 
     return (
         <div>
@@ -20,5 +31,3 @@ const ProductsTemplate = ({ products }: { products: Product[] }) => {
         </div>
     )
 }
-
-export default ProductsTemplate;

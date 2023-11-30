@@ -1,4 +1,4 @@
-import ProductSkeleton from "../src/components/Skeletons/StoreSkeleton";
+import ProductSkeleton from "../../src/components/Skeletons/StoreSkeleton";
 
 
 
