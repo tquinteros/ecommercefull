@@ -8,7 +8,6 @@ const ProductsTemplate = ({ products }: { products: Product[] }) => {
 
     return (
         <div>
-            hola
             <div className="grid grid-cols-12 gap-6">
                 {
                     products.map((product) => {
