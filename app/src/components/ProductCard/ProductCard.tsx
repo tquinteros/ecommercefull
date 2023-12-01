@@ -19,13 +19,7 @@ const ProductCard = ({ product }: { product: Product }) => {
                 <h3 className="uppercase">{product.name}</h3>
                 <h3 className="uppercase">${product.price}</h3>
                 <div className="flex justify-center gap-2">
-                    {
-                        product.sizes.map((size) => {
-                            return (
-                                <span className="uppercase border p-1 px-3" key={size}>{size}</span>
-                            )
-                        })
-                    }
+                    {product.sizes}
                 </div>
             </div>
         </div>

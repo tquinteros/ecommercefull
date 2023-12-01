@@ -45,7 +45,7 @@ export function LoaderTest() {
 export default function ProductSkeleton() {
   return (
     <>
-      <div className="grid grid-cols-12 gap-4">
+      <div className="grid grid-cols-12 gap-4 px-12">
         <LoaderTest />
         <LoaderTest />
         <LoaderTest />

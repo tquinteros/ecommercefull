@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { inter, lusitana } from './src/components/fonts/fonts'
 import './globals.css'
 import Header from './src/components/Header/Header'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +22,7 @@ export default function RootLayout({
       <body className={`${lusitana.className} antialiased`}>
         <Header />
         {children}
+        <ToastContainer />
         </body>
     </html>
   )

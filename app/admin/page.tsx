@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { fetchProducts } from "../lib/data";
 import ProductsTemplate from "../src/components/ProductsTemplate/ProductsTemplate";
 
@@ -7,7 +8,7 @@ export default async function Page() {
     
     return (
         <div>
-            ADMIN
+            <Link href="/admin/create">Create Product</Link>
         </div>
     )
 }
