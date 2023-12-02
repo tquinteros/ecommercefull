@@ -15,12 +15,6 @@ import { useState } from 'react';
 
 export default function Form({ products }: { products: Product[] }) {
     const initialState = { message: null, errors: {} };
-    const [selectedSizes, setSelectedSizes] = useState<string[]>([]);
-    
-    //   const [state, dispatch] = useFormState(createInvoice, initialState);
-
-    // create a string of sizes separated by commas
-    const sizes = selectedSizes.join(',');
 
     return (
         <form action={createInvoice}>

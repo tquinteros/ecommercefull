@@ -23,7 +23,7 @@ const Header = () => {
     const pathname = usePathname()
 
     return (
-        <header className="py-4 px-12 sticky top-0 bg-black">
+        <header className="py-4 sticky top-0 bg-black">
             <nav className="flex justify-between items-center">
                 <Link href="/" className="text-4xl">LOGO</Link>
                 <ul className="flex gap-12 uppercase">

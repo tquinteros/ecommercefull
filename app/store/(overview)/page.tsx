@@ -16,7 +16,7 @@ export default async function Page({
     // const products = await fetchProducts();
 
     return (
-        <div className="py-4 flex flex-col gap-4 px-12">
+        <div className="py-4 flex flex-col gap-4">
             <Search placeholder="Search products..." />
             <ProductsTemplate query={query} currentPage={currentPage} />
         </div>

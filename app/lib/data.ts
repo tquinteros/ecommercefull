@@ -36,7 +36,7 @@ export async function fetchRandomProducts() {
     try {
         const data = await sql<Product>`SELECT * FROM products ORDER BY RANDOM() LIMIT 4`;
         // console.log('Fetched random products data:', data.rows);
-        console.log('Fetched random products data:', data.rows);
+        console.log( data.rows, 'Fetched random products data:');
         return data.rows;
     } catch (error) {
         console.error('Database Error:', error);

@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${lusitana.className} antialiased`}>
+      <body className={`${lusitana.className} antialiased px-12`}>
         <Header />
         {children}
         <ToastContainer />
